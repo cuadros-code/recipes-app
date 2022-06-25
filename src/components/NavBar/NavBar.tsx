@@ -18,11 +18,13 @@ const NavBar = () => {
       <ul className='navbar__list-menu' >
         {
           navbarLinks.map( (item, i) => (
-          <li>
+          <li key={i}>
             <NavLink  
               to={item.to}
               className={({isActive}) => isActive ? 'navbar__item-active': 'navbar__item' }
-            >{item.label}</NavLink>
+            > 
+              {item.label}
+            </NavLink>
           </li>
           ))
         }
