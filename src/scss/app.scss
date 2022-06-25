@@ -1,0 +1,22 @@
+@import "./variables";
+
+@font-face {
+  src: url("../assets/fonts/Monster-Clubhouse.ttf");
+  font-family: $font-monster;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../assets/fonts/Poppins-Medium.ttf");
+  font-family: $font-poppins-medium;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+  font-family: $font-poppins-regular;
+  font-weight: normal;
+  font-style: normal;
+}

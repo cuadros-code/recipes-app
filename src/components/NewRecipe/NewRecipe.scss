@@ -1,0 +1,51 @@
+@import '../../scss/variables';
+
+.recipe{
+  padding: 20px 70px;
+  height: auto;
+  min-height: 550px;
+
+  @media (max-width: $medium) {
+    padding: 10px 30px;
+  }
+
+  .recipe__title{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+    color: $primary;
+    font-family: $font-monster;
+    font-size: 67px;
+    font-weight: 300;
+
+    @media (max-width: $medium) {
+      font-size: 54px;
+      margin-bottom: 10px;
+    }
+    @media (max-width: $small) {
+      font-size: 44px;
+      text-align: center;
+    }
+  }
+
+
+  .recipe__list{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @media (max-width: $medium) {
+      -webkit-overflow-scrolling: touch;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      padding-top: 70px;
+      padding-bottom: 10px;
+    }
+    @media (max-width: $small) {
+    }
+
+  }
+
+}

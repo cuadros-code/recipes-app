@@ -1,0 +1,143 @@
+@import '../../scss/variables';
+
+.card{
+  align-items: center;
+  background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  box-shadow: 0px 5px 9px #8395A766;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-evenly;
+  width: 266px;
+
+  @media (max-width: $medium) {
+    margin-right: 30px;
+    min-width: 180px;
+  }
+
+  @media (max-width: $small) {
+    min-width: 180px;
+  }
+
+  .card__img__content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  
+  .card__card--img {
+    width: 100%;
+    height: 160px;
+    object-fit: none;
+    margin-top: -50px;
+  }
+  p{
+    color: $primary;
+    font-size: 30px;
+    font-family: $font-poppins-regular;
+    margin: 0px;
+    padding: 0;
+  }
+
+  .card__header--title{
+    color: $primary;
+    font-size: 30px;
+    font-family: $font-poppins-regular;
+    margin: 0px;
+    padding: 0;
+    @media (max-width: $small) {
+      font-size: 20px;
+    }
+    span{
+      font-family: $font-monster;
+    }
+  }
+
+  .card__footer__content{
+    width: 90%;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    visibility: visible;
+
+    .recipe-card-footer-img{
+      width: 23px;
+      height: 23px;
+    }
+
+    .recipe-card-start{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .recipe-score{
+        font-size: 26px;
+        color: #425966;
+        margin-left: 12px;
+        padding: 0;
+      }
+    }
+  }
+
+  .card__detail{
+    display: none;
+  }
+
+}
+
+.card:hover {
+
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+
+  .card__header--title{
+    display: none;
+  }
+  
+  .card__footer__content{
+    visibility: hidden;
+    height: 0px;
+  }
+
+  .card__detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card__img__content{
+    margin-bottom: 10px;
+  }
+
+  .card__detail--item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+
+    img{
+      width: 17px;
+    }
+
+    .card__detail {
+      font-family: $font-monster;
+      font-weight: 100;
+      font-size: 20px;
+    }
+
+    .card__detail--normal {
+      font-family: $font-poppins-regular;
+      color: #425966;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+    }
+    
+  }
+
+}
